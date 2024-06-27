@@ -1,0 +1,89 @@
+/* Home.css */
+
+.home-container {
+    padding: 2rem;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+
+  /* logout css */
+  .logout-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+
+  .logout-button {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+  }
+
+  .logout-button:hover {
+    background-color: #c82333;
+  }
+
+  .add-notebook-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .add-notebook-form input {
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .add-notebook-form button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .add-notebook-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .notebook-list {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
+  
+  .notebook-item {
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #f8f9fa;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-grow: 1;
+    flex-shrink: inherit;
+    flex-basis: calc(33.333% - 1px);
+    box-sizing: border-box;
+    width: 292px;
+  }
+
+  .notebook-item:hover {
+    border-color: gainsboro;
+  }
+  
+  .notebook-item h2 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  

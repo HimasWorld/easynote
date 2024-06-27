@@ -1,0 +1,91 @@
+/* notebook.css */
+/* add typewriter font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.notebook-container {
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.notebook-container textarea {
+  /* show a centered full page of text before scrolling */
+  width: 50%;
+  height: 80vh;
+  display: block;
+  margin: 0 auto;
+  
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 0 50px;
+  resize: none;
+}
+
+.date {
+  color: #666;
+  font-size: 0.75rem;
+}
+
+.media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.media button {
+  background-color: #e57373;
+  border: none;
+  color: #fff;
+  padding: 7px 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.media button:hover {
+  background-color: #ef5350;
+}
+
+.loading-animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 0.5rem;
+}
+
+.loading-animation::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  border-top-color: white;
+  animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.title-loader {
+  height: 75px; 
+  gap: 4px;
+  display: flex;
+  justify-content: center;
+}
