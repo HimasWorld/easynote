@@ -1,7 +1,7 @@
 // Signup.tsx
 
 import React, { useEffect, useState } from 'react';
-import { auth } from '../auth/firebaseConfig';
+import { auth } from '../firebaseConfig';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import './signup.css';
 import { Link, useNavigate } from 'react-router-dom';

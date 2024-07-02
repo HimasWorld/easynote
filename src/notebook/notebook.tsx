@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { setDoc, doc, getDoc } from 'firebase/firestore'; // Add missing import for Timestamp
-import { db } from '../auth/firebaseConfig';
+import { db } from '../firebaseConfig';
 import './notebook.css';
-import { NotebookData } from '../home/home';
+import { NotebookData } from '../contexts/notebookContext';
 
 const Notebook: React.FC = () => {
   const { id } = useParams<{ id: string }>(); // Get the notebook id from the URL

@@ -2,7 +2,7 @@
 
 import React, { createContext, useContext, useEffect, useState, ReactNode } from 'react';
 import { onAuthStateChanged, User } from 'firebase/auth';
-import { auth } from './firebaseConfig';
+import { auth } from '../firebaseConfig';
 
 interface AuthContextType {
   currentUser: User | null;
@@ -46,3 +46,9 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   );
   
 };
+
+export const handleLogout = () => {
+  // Logout logic
+  auth.signOut();
+};
+
