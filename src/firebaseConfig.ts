@@ -3,13 +3,13 @@ import { getFirestore } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBo0WRo1TxrDA8_xQdEmBl4q7i3Lg1hVfo",
-    authDomain: "notes-test-a887b.firebaseapp.com",
-    projectId: "notes-test-a887b",
-    storageBucket: "notes-test-a887b.appspot.com",
-    messagingSenderId: "88549523340",
-    appId: "1:88549523340:web:584ed195ebbf5f93a720a9",
-    measurementId: "G-3SWWDGGNSB"
+      apiKey: "AIzaSyBsKIvoNccSz3CvjqubywrCp70G4K672b0",
+  authDomain: "easynote-3013e.firebaseapp.com",
+  projectId: "easynote-3013e",
+  storageBucket: "easynote-3013e.firebasestorage.app",
+  messagingSenderId: "439901326097",
+  appId: "1:439901326097:web:5610a6eaabf32953d91ab0",
+  measurementId: "G-9GLPV0D558"
   };
 
 // Initialize Firebase
